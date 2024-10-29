@@ -1,0 +1,53 @@
+#SHELL
+[shell]
+program = "zsh"
+
+# WINDOW
+[window]
+opacity = 0.9
+blur = true
+dimensions = { columns = 128, lines = 32}
+padding.x = 3
+padding.y = 3
+decorations = "none"
+decorations_theme_variant = "Dark"
+resize_increments = true
+startup_mode = "Windowed"
+dynamic_title = true
+dynamic_padding = true
+
+# SCROLLING
+[scrolling]
+history = 5000
+multiplier = 5
+
+[font]
+size = 19.0
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+# CURSOR
+[cursor]
+style = { shape = "Block", blinking = "On" }
+unfocused_hollow = true
+
+# MOUSE
+[mouse]
+hide_when_typing = true
+
+# KEYBOARD
+[keyboard]
+bindings = [
+  {key = "+", mods = "Command", action = "IncreaseFontSize"},
+  {key = "-", mods = "Command", action = "DecreaseFontSize"},
+  {key = "q", mods = "Super", action = "Quit"},
+  {key = "Enter", mods = "Super", action = "CreateNewWindow"},
+]
+
+# DEBUG
+[debug]
+render_timer = false
+persistent_logging = false
+log_level = "Warn"
+print_events = false
