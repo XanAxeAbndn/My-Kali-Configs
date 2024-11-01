@@ -1,1 +1,1 @@
-apt install fastfetch cpufetch ranger htop lsd
+apt install fastfetch cpufetch ranger htop lsd fzf
